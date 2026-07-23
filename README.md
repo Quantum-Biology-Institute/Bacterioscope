@@ -472,6 +472,19 @@ Dev2   (LED, camera, magnetometer)
 ASRL18::INSTR  → F71 SCPI (calibration & dynamic-validation GUIs only)
 ```
 
+---
+
+## 8. License
+
+Copyright 2026 Quantum Biology Institute.
+
+Code in this repository is released under the **Apache License, Version 2.0**
+(see [`LICENSE`](LICENSE)). The calibration data files (`calibration_M.npy`,
+`calibration_B0.npy`) are released under **CC0-1.0** (public domain dedication).
+
+This follows QBI's data management plan: software under Apache 2.0, data under
+CC0, text and figures under CC BY 4.0.
+
 Calibration identity: **`B_mT = M · V_volts`**, with `M ∈ ℝ^{3×3}` stored as
 `calibration_M.npy`. Inverse mapping (used at runtime to realize a target
 field): **`V = M⁻¹ · B_mT`**, optionally with `B0` pre-subtracted from the
