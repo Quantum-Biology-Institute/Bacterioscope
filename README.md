@@ -448,7 +448,7 @@ itself.
 | Micro-Manager connection fails              | Launch Micro-Manager *before* the experiment GUI. Confirm the pycromanager version matches your MM build. |
 | Calibration warning at experiment start     | `calibration_M.npy` is missing. Run `calibration_gui.py` and save it. The experiment will otherwise run with a 1 mT → 1 V dummy mapping (incorrect physical fields). |
 | Frames dropped / timing drift               | Make sure `snap_interval_s` > camera exposure + readout. Check CPU load. All time-to-sample conversions in `experiment_runners.py` use `int(np.round(t * fs))` to avoid cumulative drift — don't change that. |
-| Field saturates (`saturated: true` in JSON) | The requested |B| exceeds what the coils can deliver within ±10 V. The runner has already uniformly down-scaled the vector; reduce the requested field or improve the coil drive. |
+| Field saturates (`saturated: true` in JSON) | The requested \|B\| exceeds what the coils can deliver within ±10 V. The runner has already uniformly down-scaled the vector; reduce the requested field or improve the coil drive. |
 | Static validation off by tens of percent    | Re-run calibration with the probe more carefully aligned to the instrument frame; large misalignment shows up as large off-diagonal entries in `M`. |
 
 ---
