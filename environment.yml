@@ -1,0 +1,12 @@
+name: bacterioscope
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11  # 3.11 is stable and well-supported
+  - numpy>=1.24.0
+  - matplotlib>=3.7.0
+  - pip
+  - pip:
+      - nidaqmx>=0.6.5
+      - pycromanager>=0.25.0

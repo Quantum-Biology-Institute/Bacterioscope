@@ -1,0 +1,13 @@
+# Core scientific computing
+numpy>=1.24.0
+matplotlib>=3.7.0
+
+# Hardware control
+nidaqmx>=0.6.5
+
+# Micro-Manager Python interface
+pycromanager>=0.25.0
+
+# GUI dependencies
+Pillow>=10.0.0  # For logo and image display in GUI
+# tkinter is part of Python standard library on most systems
